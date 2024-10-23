@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Fondo celeste claro */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centra todo el texto */
+}
+
+header {
+    background-color: #1e90ff; /* Azul llamativo */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Main content */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+main h2 {
+    font-size: 2em;
+    color: #1e90ff; /* Azul llamativo */
+    margin-bottom: 20px;
+    text-align: center; /* Subtítulos centrados */
+    font-weight: bold;
+    border-bottom: 2px solid #1e90ff; /* Línea decorativa */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Estilo para las imágenes */
+main img {
+    display: block;
+    margin: 20px auto; /* Centra la imagen */
+    max-width: 100%; /* La imagen nunca sobrepasa el contenedor */
+    height: auto; /* Mantiene la proporción */
+    max-height: 400px; /* Altura máxima moderada */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para la imagen */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 20px 10px;
+    background-color: #1e90ff; /* Azul llamativo */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza la interacción */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    text-decoration: none; /* Sin subrayado si es enlace */
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #4682b4; /* Azul más oscuro al pasar el ratón */
+    transform: translateY(-3px); /* Levanta el botón al hacer hover */
+}
+
+.btn:active {
+    background-color: #4169e1; /* Azul intenso al hacer clic */
+    transform: translateY(0); /* Retorno del botón */
+}
+
+.btn:focus {
+    outline: none; /* Sin borde de foco */
+    box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.5); /* Sombra azul cuando el botón está enfocado */
+}
+
+/* Contenedor de los botones */
+.botones-contenedor {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre botones */
+    margin-top: 30px;
+}
+
+/* Responsive Design para móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%; /* Botones al 100% de ancho en pantallas pequeñas */
+        padding: 15px;
+    }
+}

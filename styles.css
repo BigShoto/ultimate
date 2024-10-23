@@ -1,0 +1,73 @@
+/* General styles (mismos que antes) */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa; /* Blanco suave */
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #ec30c4; /* Naranja suave */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+main h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff6347; /* Naranja para títulos */
+    margin-bottom: 20px;
+}
+
+/* Botones alineados al centro */
+.servicios {
+    display: flex;
+    justify-content: left;  /* Centra los botones horizontalmente */
+    flex-wrap: wrap;  /* Permite que los botones se ajusten si no caben en una fila */
+    gap: 20px;  /* Espacio entre los botones */
+    margin-top: 20px;
+}
+
+/* Estilo de los botones */
+.new-button {
+    padding: 15px 40px;
+    background-color: #1e90ff; /* Azul vivo */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 200px;  /* Para que los botones tengan un tamaño mínimo */
+}
+
+/* Efectos de hover y active */
+.new-button:hover {
+    background-color: #4682b4; /* Azul más oscuro */
+    transform: translateY(-3px);
+}
+
+.new-button:active {
+    background-color: #1c6fbd;
+}
+
+.new-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.5); /* Efecto de foco */
+}
+
+/* Contenedor del botón */
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;  /* Espacio entre botones */
+    margin: 20px 0;
+}
